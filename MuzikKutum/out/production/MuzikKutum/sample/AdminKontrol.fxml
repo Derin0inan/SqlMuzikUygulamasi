@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+  <tabs>
+    <Tab text="E K L E ">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="521.0" fitWidth="848.0" layoutX="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resim/ppp.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="sanatcieklebuton" layoutX="254.0" layoutY="229.0" mnemonicParsing="false" onAction="#sanatciekleButonOnAction" prefHeight="40.0" prefWidth="83.0" text="EKLE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sarkieklebuton" layoutX="447.0" layoutY="363.0" mnemonicParsing="false" onAction="#sarkieklebutonOnAction" prefHeight="40.0" prefWidth="83.0" text="EKLE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="album_ekle" alignment="CENTER" layoutX="42.0" layoutY="61.0" style="-fx-background-color: #ffb6c1;" text="ALBÜM EKLE" />
+                  <TextField fx:id="sanatci_ekle" alignment="CENTER" layoutX="221.0" layoutY="61.0" style="-fx-background-color: #FFB6C1;" text="SANATÇI EKLE" />
+                  <TextField fx:id="sarki_ekle" alignment="CENTER" layoutX="409.0" layoutY="61.0" style="-fx-background-color: #FFB6C1;" text="ŞARKI EKLE" />
+                  <TextField fx:id="albumekle_adi" alignment="CENTER" layoutX="53.0" layoutY="110.0" prefHeight="20.0" prefWidth="127.0" promptText="Albüm Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="albumekle_sanatci" alignment="CENTER" layoutX="53.0" layoutY="154.0" prefHeight="20.0" prefWidth="127.0" promptText="Sanatçı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="albumekle_sarki" alignment="CENTER" layoutX="53.0" layoutY="203.0" prefHeight="20.0" prefWidth="127.0" promptText="Şarkı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="albumekle_tur" alignment="CENTER" layoutX="53.0" layoutY="252.0" prefHeight="20.0" prefWidth="127.0" promptText="Tür" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sanatciekle_adi" alignment="CENTER" layoutX="232.0" layoutY="110.0" prefHeight="20.0" prefWidth="127.0" promptText="Sanatçı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sanatciekle_ulke" alignment="CENTER" layoutX="232.0" layoutY="154.0" prefHeight="20.0" prefWidth="127.0" promptText="Ülke" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiekle_adi" alignment="CENTER" layoutX="420.0" layoutY="110.0" prefHeight="20.0" prefWidth="127.0" promptText="Şarkı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiekle_sanatci" alignment="CENTER" layoutX="424.0" layoutY="154.0" prefHeight="20.0" prefWidth="127.0" promptText="Sanatçı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiekle_tur" alignment="CENTER" layoutX="424.0" layoutY="191.0" prefHeight="20.0" prefWidth="127.0" promptText="Tür" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiekle_sure" alignment="CENTER" layoutX="424.0" layoutY="236.0" prefHeight="20.0" prefWidth="127.0" promptText="Süre" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiekle_album" alignment="CENTER" layoutX="424.0" layoutY="277.0" prefHeight="20.0" prefWidth="127.0" promptText="Albüm Adı" style="-fx-background-color: #FFC6;" />
+                  <DatePicker fx:id="albumekle_tarih" layoutX="31.0" layoutY="311.0" />
+                  <DatePicker fx:id="sarkiekle_tarih" layoutX="401.0" layoutY="311.0" />
+                  <Button fx:id="albumeklebuton" layoutX="76.0" layoutY="369.0" mnemonicParsing="false" onAction="#albumekleButonOnAction" prefHeight="40.0" prefWidth="83.0" text="EKLE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content></Tab>
+      <Tab text="SİL        ">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="521.0" fitWidth="848.0" layoutX="-23.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resim/ppp.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="albumsilbuton" layoutX="75.0" layoutY="179.0" mnemonicParsing="false" onAction="#albumsilbutonOnAction" prefHeight="40.0" prefWidth="83.0" text="SİL">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sanatcisilbuton" layoutX="254.0" layoutY="159.0" mnemonicParsing="false" onAction="#sanatcisilbutonOnAction" prefHeight="40.0" prefWidth="83.0" text="SİL">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sarkisilbuton" layoutX="442.0" layoutY="172.0" mnemonicParsing="false" onAction="#sarkisilbutonOnAction" prefHeight="40.0" prefWidth="83.0" text="SİL">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="album_sil" alignment="CENTER" layoutX="42.0" layoutY="61.0" style="-fx-background-color: #ffb6c1;" text="ALBÜM SİL" />
+                  <TextField fx:id="sanatci_sil" alignment="CENTER" layoutX="221.0" layoutY="61.0" style="-fx-background-color: #FFB6C1;" text="SANATÇI SİL" />
+                  <TextField fx:id="sarki_sil" alignment="CENTER" layoutX="409.0" layoutY="61.0" style="-fx-background-color: #FFB6C1;" text="ŞARKI SİL" />
+                  <TextField fx:id="albumsil_adi" alignment="CENTER" layoutX="53.0" layoutY="110.0" prefHeight="20.0" prefWidth="127.0" promptText="Albüm Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sanatcisil_adi" alignment="CENTER" layoutX="232.0" layoutY="110.0" prefHeight="20.0" prefWidth="127.0" promptText="Sanatçı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkisil_adi" alignment="CENTER" layoutX="409.0" layoutY="123.0" prefHeight="20.0" prefWidth="127.0" promptText="Şarkı Adı" style="-fx-background-color: #FFC6;" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="GÜNCELLE   ">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="521.0" fitWidth="848.0" layoutX="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resim/ppp.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="albumguncellebuton" layoutX="75.0" layoutY="403.0" mnemonicParsing="false" onAction="#albumGuncelleOnAction" prefHeight="40.0" prefWidth="83.0" text="GÜNCELLE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sanatciguncellebuton" layoutX="254.0" layoutY="245.0" mnemonicParsing="false" onAction="#sanatciguncellebutonOnAction" prefHeight="40.0" prefWidth="83.0" text="GÜNCELLE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sarkiguncellebuton" layoutX="447.0" layoutY="403.0" mnemonicParsing="false" onAction="#sarkiguncellebutonOnAction" prefHeight="40.0" prefWidth="83.0" text="GÜNCELLE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="album_guncelle" alignment="CENTER" layoutX="42.0" layoutY="61.0" style="-fx-background-color: #ffb6c1;" text="ALBÜM GUNCELLE" />
+                  <TextField fx:id="sanatci_guncelle" alignment="CENTER" layoutX="221.0" layoutY="61.0" style="-fx-background-color: #FFB6C1;" text="SANATÇI GUNCELLE" />
+                  <TextField fx:id="sarki_guncelle" alignment="CENTER" layoutX="409.0" layoutY="61.0" style="-fx-background-color: #FFB6C1;" text="ŞARKI GUNCELLE" />
+                  <TextField fx:id="albumguncelle_adi" alignment="CENTER" layoutX="53.0" layoutY="110.0" prefHeight="20.0" prefWidth="127.0" promptText="Albüm Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="albumguncelle_sanatci" alignment="CENTER" layoutX="53.0" layoutY="154.0" prefHeight="20.0" prefWidth="127.0" promptText="Sanatçı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="albumguncelle_sarki" alignment="CENTER" layoutX="53.0" layoutY="203.0" prefHeight="20.0" prefWidth="127.0" promptText="Şarkı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="albumguncelle_tur" alignment="CENTER" layoutX="53.0" layoutY="252.0" prefHeight="20.0" prefWidth="127.0" promptText="Tür" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sanatciguncelle_adi" alignment="CENTER" layoutX="232.0" layoutY="110.0" prefHeight="20.0" prefWidth="127.0" promptText="Sanatçı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sanatciguncelle_ulke" alignment="CENTER" layoutX="232.0" layoutY="154.0" prefHeight="20.0" prefWidth="127.0" promptText="Ülke" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiguncelle_adi" alignment="CENTER" layoutX="420.0" layoutY="110.0" prefHeight="20.0" prefWidth="127.0" promptText="Şarkı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiguncelle_sanatci" alignment="CENTER" layoutX="425.0" layoutY="154.0" prefHeight="20.0" prefWidth="127.0" promptText="Sanatçı Adı" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiguncelle_tur" alignment="CENTER" layoutX="424.0" layoutY="191.0" prefHeight="20.0" prefWidth="127.0" promptText="Tür" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiguncelle_sure" alignment="CENTER" layoutX="424.0" layoutY="236.0" prefHeight="20.0" prefWidth="127.0" promptText="Süre" style="-fx-background-color: #FFC6;" />
+                  <TextField fx:id="sarkiguncelle_album" alignment="CENTER" layoutX="424.0" layoutY="277.0" prefHeight="20.0" prefWidth="127.0" promptText="Albüm Adı" style="-fx-background-color: #FFC6;" />
+                  <DatePicker fx:id="albumguncelle_tarih" layoutX="30.0" layoutY="363.0" />
+                  <DatePicker fx:id="sarkiguncelle_tarih" layoutX="409.0" layoutY="311.0" />
+                  <TextField fx:id="albumguncelle_id" alignment="CENTER" layoutX="54.0" layoutY="311.0" prefHeight="20.0" prefWidth="127.0" promptText="Degisecek Album ID" style="-fx-background-color: #FFC;" />
+                  <TextField fx:id="sanatciguncelle_id" alignment="CENTER" layoutX="232.0" layoutY="203.0" prefHeight="20.0" prefWidth="127.0" promptText="Degisecek Sanatci ID" style="-fx-background-color: #FFC;" />
+                  <TextField fx:id="sarkiguncelle_id" alignment="CENTER" layoutX="424.0" layoutY="355.0" prefHeight="20.0" prefWidth="127.0" promptText="Degisecek Sarki ID" style="-fx-background-color: #FFC;" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
